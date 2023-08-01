@@ -26,10 +26,10 @@ SELECT * FROM empleados
 WHERE apellidos LIKE 'P%';
 
 -- 2.8 Presupesto total de todos los depart
-SELECT SUM(presupuesto) AS Presupuesto_total FROM departamentos;
+SELECT SUM(presupuesto) AS 'Presupuesto total' FROM departamentos;
 
 -- 2.9 Obten el numero de empleados en cada departamento
-SELECT departamento, COUNT(*) AS numero_empleados FROM empleados
+SELECT departamento, COUNT(*) AS 'Numero empleados' FROM empleados
 GROUP BY departamento;
 
 -- 2.10 Obten listado completo de empleados, ademas de su departamento
